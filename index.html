@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Portal - Connect Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">💰 Crypto Portal</div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#connect">Connect</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to Crypto Portal</h1>
+            <p>A secure and simple way to connect your blockchain wallet</p>
+            <p class="subtitle">Support for 50+ major cryptocurrency wallets</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>Your private keys never leave your device</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast</h3>
+                    <p>Connect instantly without complications</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multi-Chain</h3>
+                    <p>Support for Ethereum, Bitcoin, Solana, and more</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wallet Connection Section -->
+        <section class="wallet-section" id="connect">
+            <h2>Select Your Wallet</h2>
+            <p class="wallet-subtitle">Choose from popular blockchain wallets</p>
+            
+            <div class="wallet-tabs">
+                <button class="tab-btn active" onclick="filterWallets('all')">All Wallets</button>
+                <button class="tab-btn" onclick="filterWallets('popular')">Popular</button>
+                <button class="tab-btn" onclick="filterWallets('ethereum')">Ethereum</button>
+                <button class="tab-btn" onclick="filterWallets('bitcoin')">Bitcoin</button>
+            </div>
+
+            <div class="wallet-grid" id="walletGrid">
+                <!-- Popular Wallets -->
+                <div class="wallet-card" data-category="popular">
+                    <div class="wallet-logo">🦊</div>
+                    <h3>MetaMask</h3>
+                    <p>Popular Ethereum wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card" data-category="popular">
+                    <div class="wallet-logo">💙</div>
+                    <h3>Coinbase Wallet</h3>
+                    <p>Secure self-hosted wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card" data-category="popular">
+                    <div class="wallet-logo">🌈</div>
+                    <h3>Uniswap Wallet</h3>
+                    <p>Decentralized trading</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card" data-category="ethereum">
+                    <div class="wallet-logo">🏛️</div>
+                    <h3>Trust Wallet</h3>
+                    <p>Multi-chain crypto wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <!-- Ethereum Wallets -->
+                <div class="wallet-card" data-category="ethereum">
+                    <div class="wallet-logo">🐰</div>
+                    <h3>Rabby Wallet</h3>
+                    <p>User-friendly Ethereum wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card" data-category="ethereum">
+                    <div class="wallet-logo">👻</div>
+                    <h3>Phantom Wallet</h3>
+                    <p>Solana & Ethereum support</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <!-- Bitcoin Wallets -->
+                <div class="wallet-card" data-category="bitcoin">
+                    <div class="wallet-logo">🔑</div>
+                    <h3>Ledger Live</h3>
+                    <p>Hardware wallet security</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card" data-category="bitcoin">
+                    <div class="wallet-logo">🟠</div>
+                    <h3>OKX Wallet</h3>
+                    <p>Multi-chain crypto wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <!-- Additional Popular Wallets -->
+                <div class="wallet-card">
+                    <div class="wallet-logo">🎨</div>
+                    <h3>Zerion Wallet</h3>
+                    <p>DeFi portfolio manager</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card">
+                    <div class="wallet-logo">🌊</div>
+                    <h3>Rainbow Wallet</h3>
+                    <p>Ethereum NFT wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card">
+                    <div class="wallet-logo">🔱</div>
+                    <h3>Gnosis Safe</h3>
+                    <p>Multi-sig security wallet</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+                
+                <div class="wallet-card">
+                    <div class="wallet-logo">⚙️</div>
+                    <h3>WalletConnect</h3>
+                    <p>Connect any wallet via QR</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Crypto Portal. All rights reserved.</p>
+            <p>Supporting 50+ wallets | Multi-chain compatible | Enterprise grade security</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
